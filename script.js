@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", async function() {
         video.onplay = function() {
             streamtest = canvas.captureStream();
             videostream.srcObject = streamtest;
-            console.log('streamtest', streamtest); 
+            console.log('streamtest check', streamtest); 
             console.log('streamtest.getVideoTracks()[0]', streamtest?.getVideoTracks()[0]); 
             streamtest.getTracks().forEach((track) => console.log('track', track));
         };
