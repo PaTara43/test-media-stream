@@ -23,6 +23,8 @@ window.addEventListener("DOMContentLoaded", async function() {
         };
         
         // console.log(video.srcObject, videostream.srcObject, streamtest, streamtest.getVideoTracks()[0]); 
+        console.log('streamtest', streamtest, streamtest.getVideoTracks()[0]); 
+        console.log('streamtest.getVideoTracks()[0]', streamtest.getVideoTracks()[0]); 
 
         // video.crossOrigin = "Anonymous";
         // img.crossOrigin = "Anonymous";
