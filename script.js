@@ -21,8 +21,8 @@ window.addEventListener("DOMContentLoaded", async function() {
         video.onplay = function() {
             streamtest = canvas.captureStream();
             videostream.srcObject = streamtest;
-            console.log('streamtest', streamtest); 
-        console.log('streamtest.getVideoTracks()[0]', streamtest?.getVideoTracks()[0]); 
+            console.log('streamtest', canvas.captureStream()); 
+            console.log('streamtest.getVideoTracks()[0]', streamtest?.getVideoTracks()[0]); 
         };
 
         
