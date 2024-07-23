@@ -15,10 +15,11 @@ window.addEventListener("DOMContentLoaded", async function() {
     ;
 
     navigator.mediaDevices.getUserMedia(videoObj).then((stream) => {
+        let streamtest;
         video.srcObject = stream;
         // videostream.srcObject = canvas.captureStream();
         video.onplay = function() {
-            let streamtest = canvas.captureStream();
+            streamtest = canvas.captureStream();
             videostream.srcObject = streamtest;
         };
 
